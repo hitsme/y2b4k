@@ -1,15 +1,6 @@
 {
   "require": {
     "php": "7.2.x",
-    "slim/slim": "^3.0",
-    "leancloud/leancloud-sdk": "^0.8",
-    "slim/php-view": "^2.1",
     "ext-mbstring": "*"
-  },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.phpcomposer.com"
-    }
   }
 }
