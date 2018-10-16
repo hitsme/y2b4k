@@ -3,12 +3,11 @@ ini_set('display_errors', '0');
 //把下面的资料改成您的
 
 //网站名字
-
-$siteName=$_SERVER['SERVER_NAME'];
+$siteName='天天看视频';
 
 //youtube API V3 KEY:
 
-$key='AIzaSyB5zY2fq6YRSMxF7HwGb8rEQ8VVRxiO6ps';
+$key='*******************************************';
 
 
 //其他地方不用改。
@@ -177,7 +176,7 @@ switch (@$_SERVER['PATH_INFO']) {
     <p>不能观看请刷新,多试几次，若页面一直处于加载状态，可手动停止！</p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
-            <iframe width="100%" height="100%" src="'.$_SERVER['SERVER_NAME'].'/Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>'; 
         echo $footer;
         break;
