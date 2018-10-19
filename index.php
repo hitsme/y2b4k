@@ -1,13 +1,42 @@
 <?php
 ini_set('display_errors', '0');
+
+include("./config.php");
+session_start();
+if(isset($_POST['password']) &&$_POST['name']&& $_POST['password'] == PASSWORD&&$_POST['name'] == NAME){
+    $_SESSION['ok'] = 1;
+    header('location:?');
+}
+if(!isset($_SESSION['ok'])){
+    exit('<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css"/>
+</head>
+<body>
+    <p id="login">
+   <h1 style="text-align: center">登陆</h1>
+   <form method="post" id="form" class="divForm">
+        <input type="text" required="required" placeholder="用户名" name="name"></input>
+        <br/>
+        <input type="password" required="required" placeholder="密码" name="password"></input>
+        <br/>
+        <button type="submit" class="but">登陆</button>
+    </form>
+    </p>
+</body>
+</html>');
+}
 //把下面的资料改成您的
 
 //网站名字
-$siteName='天天看视频';
+$siteName=SITE_NAME;
 
 //youtube API V3 KEY:
 
-$key='AIzaSyB5zY2fq6YRSMxF7HwGb8rEQ8VVRxiO6ps';
+$key=APIKEY;
 
 
 //其他地方不用改。
