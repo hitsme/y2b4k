@@ -366,7 +366,7 @@ function get_trending($apikey,$max,$pageToken='',$regionCode='vn'){
 }
 
 function Root_part(){
-$http=isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+$http= 'https://';
 $part=rtrim($_SERVER['SCRIPT_NAME'],basename($_SERVER['SCRIPT_NAME']));
 $domain=$_SERVER['SERVER_NAME'];
  return "$http"."$domain"."$part";
