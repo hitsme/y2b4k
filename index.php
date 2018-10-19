@@ -19,7 +19,7 @@ $header='
         <title>'.$siteName.'</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="'.Root_part().'w3.css">'.
+        <link rel="stylesheet" href="w3.css">'.
 "<style >
                      *,html,body {
                 font-family: arial,'pingfang sc',stheiti,\"microsoft yahei\",sans-serif !important;
