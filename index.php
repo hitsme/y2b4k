@@ -19,7 +19,7 @@ $header='
         <title>'.$siteName.'</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="w3.css">'.
+        <link rel="stylesheet" href="https://.'$_SERVER['SERVER_NAME']'.w3.css">'.
 "<style >
                      *,html,body {
                 font-family: arial,'pingfang sc',stheiti,\"microsoft yahei\",sans-serif !important;
@@ -159,7 +159,7 @@ $header='
     </head>
      <body style="background-color: #f8f8f8;">
         <div class="w3-container w3-red w3-center" style="height:55px">
-           <img src="'.Root_part().'2.png" alt="logo" style="height:35px;margin: 10px 0" />
+           <img src="https://.'$_SERVER['SERVER_NAME']'.2.png" alt="logo" style="height:35px;margin: 10px 0" />
         </div>';
 $footer='<footer class="w3-container w3-red w3-center" style="width: 100%;bottom: 0px;">
             <p>©Development by <a href="https://2tube.js.org/" target="_blank">YOU2PHP</a></p>
@@ -176,7 +176,7 @@ switch (@$_SERVER['PATH_INFO']) {
     <p>不能观看请刷新,多试几次，若页面一直处于加载状态，可手动停止！</p>
   </div></div>';
        echo '<div class="w3-container w3-center bfq">
-            <iframe width="100%" height="100%" src="../Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://.'$_SERVER['SERVER_NAME']'./Proxy.php?https://www.youtube.com/embed/'.trim($_SERVER[QUERY_STRING]).'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>'; 
         echo $footer;
         break;
